@@ -39,10 +39,6 @@ func LoadConfig() (err error) {
 		log.Flush()
 		os.Exit(-1)
 	}
-
-	fmt.Printf("%+v\n", Config)
-
-	return
 	LoadLog()
 	InitDatabase()
 	return
@@ -65,15 +61,14 @@ func InitDatabase() {
 		db  *gorm.DB
 		err error
 	)
-	fmt.Println(Config.Database.DBType)
 
 	switch Config.Database.DBType {
 	case "postgres":
 		db, err = gorm.Open("postgres", Config.Database.Connect)
 	case "mysql":
 		db, err = gorm.Open("mysql", Config.Database.Connect)
-
 	}
+
 	if err != nil || db == nil {
 		log.Errorf("数据库连接失败: %s", err)
 		log.Errorf("数据库配置信息: %v", Config.Database)
@@ -83,6 +78,6 @@ func InitDatabase() {
 
 	DB = db.Set("gorm:save_associations", false)
 	//创建数据库
-	DBMigrate(db)
+	DBMigrate(DB)
 	return
 }

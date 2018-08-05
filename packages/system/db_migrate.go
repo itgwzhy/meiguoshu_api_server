@@ -1,13 +1,18 @@
 package system
 
 import (
-	"github.com/GACHAIN/dongjing-server/models"
 	"github.com/jinzhu/gorm"
+	"github.com/MEIGUOSHU/web-api/packages/model"
 )
 
 func DBMigrate(db *gorm.DB) {
-	//migrate base model to database table
-	db.AutoMigrate(&models.User{}, &models.Menu{})
 	//application model to database table
-	db.AutoMigrate()
+	db.AutoMigrate(
+		&model.Application{},
+		&model.Category{},
+		&model.Consultation{},
+		&model.Contact{},
+		&model.Link{},
+		&model.News{},
+		&model.Product{})
 }

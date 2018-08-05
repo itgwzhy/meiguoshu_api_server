@@ -1,12 +1,13 @@
 package router
 
 import (
-	"github.com/gin-gonic/gin"
 	"github.com/MEIGUOSHU/web-api/packages/controller"
+	"github.com/gin-gonic/gin"
 )
 
 var (
-	Index *controller.Index
+	product  *controller.Product
+	category *controller.Category
 )
 
 func InitRouter() *gin.Engine {
@@ -17,5 +18,8 @@ func InitRouter() *gin.Engine {
 }
 
 func addRouter(r *gin.Engine) {
-	r.GET("/:id", Index.Get)
+	r.GET("/:id", product.Get)
+	r.POST("/:id", product.Post)
+	r.PUT("/:id", product.Put)
+	r.DELETE("/:id", product.Delete)
 }
