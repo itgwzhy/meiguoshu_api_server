@@ -1,9 +1,28 @@
 package main
 
-import "github.com/MEIGUOSHU/web-api/packages/system"
+import (
+	"fmt"
+	"github.com/MEIGUOSHU/web-api/packages/router"
+	"github.com/MEIGUOSHU/web-api/packages/system"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 
 	// init database
-	system.LoadConfig()
+	if err := system.LoadConfig(); err != nil {
+		fmt.Println(err)
+		return
+	}
+	service := system.Config.Server
+	host, port := service.Host, service.Port
+
+	if service.Mode == "debug" {
+		gin.SetMode(gin.DebugMode)
+	} else {
+		gin.SetMode(gin.ReleaseMode)
+	}
+	//router init
+	r := router.InitRouter()
+	r.Run(host + ":" + port)
 }
