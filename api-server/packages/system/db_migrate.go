@@ -2,7 +2,7 @@ package system
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/MEIGUOSHU/web-api/packages/model"
+	"github.com/MEIGUOSHU/api-server/packages/model"
 )
 
 func DBMigrate(db *gorm.DB) {

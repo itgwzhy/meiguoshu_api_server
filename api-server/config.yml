@@ -10,7 +10,7 @@ database:
   # postgres: host=db_host port=db_port user=db_user db_name=code sslmode=disable password=db_password
   # mysql: db_user:db_password@(db_host:db_port)/db_name?charset=utf8&parseTime=True&loc=Local
   # sqlite3: db_path        eg :/tmp/gorm.db
-  connect: host=localhost port=5432 user=postgres dbname=meiguoshu sslmode=disable password=Woxihuanni1
+  connect: host=localhost port=5432 user=postgres dbname=MEIGUOSHU/api-server sslmode=disable password=Woxihuanni1
 #  connect: host=localhost port=5432 user=postgres dbname=code sslmode=disable password=postgres
 #  connect: host=192.168.1.167 port=5432 user=postgres dbname=code_test sslmode=disable password=123456
 

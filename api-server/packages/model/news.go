@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/MEIGUOSHU/web-api/packages/model/base"
+	"github.com/MEIGUOSHU/api-server/packages/model/base"
 )
 
 // 品牌资讯

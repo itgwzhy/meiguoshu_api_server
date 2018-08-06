@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/MEIGUOSHU/web-api/utils"
+	"github.com/MEIGUOSHU/api-server/utils"
 )
 
 type Application struct{}

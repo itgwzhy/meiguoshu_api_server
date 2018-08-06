@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/MEIGUOSHU/web-api/packages/router"
-	"github.com/MEIGUOSHU/web-api/packages/system"
+	"github.com/MEIGUOSHU/api-server/packages/router"
+	"github.com/MEIGUOSHU/api-server/packages/system"
 	"github.com/gin-gonic/gin"
 )
 
@@ -16,7 +16,6 @@ func main() {
 	}
 	service := system.Config.Server
 	host, port := service.Host, service.Port
-
 	if service.Mode == "debug" {
 		gin.SetMode(gin.DebugMode)
 	} else {

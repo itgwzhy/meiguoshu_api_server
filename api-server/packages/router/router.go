@@ -1,7 +1,7 @@
 package router
 
 import (
-	"github.com/MEIGUOSHU/web-api/packages/controller"
+	"github.com/MEIGUOSHU/api-server/packages/controller"
 	"github.com/gin-gonic/gin"
 )
 
