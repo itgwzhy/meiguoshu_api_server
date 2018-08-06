@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"github.com/MEIGUOSHU/api-server/packages/system"
-	"github.com/MEIGUOSHU/api-server/tools/msg"
+	"github.com/MEIGUOSHU/meiguoshu_api_server/packages/system"
+	"github.com/MEIGUOSHU/meiguoshu_api_server/tools/msg"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

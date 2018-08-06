@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"github.com/MEIGUOSHU/api-server/tools/msg"
-	"github.com/MEIGUOSHU/api-server/utils"
+	"github.com/MEIGUOSHU/meiguoshu_api_server/tools/msg"
+	"github.com/MEIGUOSHU/meiguoshu_api_server/utils"
 	"github.com/gin-gonic/gin"
 )
 

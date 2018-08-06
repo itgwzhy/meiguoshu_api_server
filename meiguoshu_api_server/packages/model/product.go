@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/MEIGUOSHU/api-server/packages/model/base"
+	"github.com/MEIGUOSHU/meiguoshu_api_server/packages/model/base"
 )
 
 //产品中心
