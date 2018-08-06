@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
-	"github.com/seelog"
+	"github.com/cihub/seelog"
 )
 
 //GenResponse genrate reponse ,json format
