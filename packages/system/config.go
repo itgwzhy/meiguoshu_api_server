@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	log "github.com/seelog"
+	log "github.com/cihub/seelog"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
