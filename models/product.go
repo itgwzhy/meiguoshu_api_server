@@ -1,12 +1,8 @@
-package model
-
-import (
-	"github.com/MEIGUOSHU/meiguoshu_api_server/packages/model/base"
-)
+package models
 
 //产品中心
 type Product struct {
-	base.Model
+	BaseModel
 	Name        string `json:"name"`     //产品名称
 	Number      int64  `json:"number"`   //产品编号
 	Spec        string `json:"spec"`     //商品规格

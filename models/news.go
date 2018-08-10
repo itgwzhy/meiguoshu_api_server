@@ -1,12 +1,8 @@
-package model
-
-import (
-	"github.com/MEIGUOSHU/meiguoshu_api_server/packages/model/base"
-)
+package models
 
 // 品牌资讯
 type News struct {
-	base.Model
+	BaseModel
 	Title   string //资讯标题
 	Des     string //描述
 	Content string //资讯内容

@@ -1,12 +1,8 @@
-package model
-
-import (
-	"github.com/MEIGUOSHU/meiguoshu_api_server/packages/model/base"
-)
+package models
 
 //联系方式
 type Contact struct {
-	base.Model
+	BaseModel
 	Tel     string //联系电话
 	Fax     string //传真
 	Working string //
