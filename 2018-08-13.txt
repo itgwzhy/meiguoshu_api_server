@@ -1,0 +1,102 @@
+[WARN] 2018/08/13 22:27 Recovered from a route's Handler('github.com/MEIGUOSHU/meiguoshu_api_server/controllers.CreateConsultation')
+At Request: 200 /consultation POST ::1
+Trace: reflect: call of reflect.Value.MethodByName on zero Value
+
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:573
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/panic.go:502
+/usr/local/Cellar/go/1.10.1/libexec/src/reflect/value.go:1177
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:438
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:252
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/callback_create.go:24
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:857
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/main.go:434
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/models/consultation.go:18
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/services/consultation.go:10
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/controllers/consultation.go:25
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:50
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:31
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/recover/recover.go:56
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1033
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1205
+/usr/local/bin/src/github.com/kataras/iris/core/router/handler.go:230
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:70
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:147
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:2694
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:1830
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:2361
+
+[WARN] 2018/08/13 22:36 Recovered from a route's Handler('github.com/MEIGUOSHU/meiguoshu_api_server/controllers.CreateConsultation')
+At Request: 200 /consultation POST ::1
+Trace: reflect: call of reflect.Value.MethodByName on zero Value
+
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:573
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/panic.go:502
+/usr/local/Cellar/go/1.10.1/libexec/src/reflect/value.go:1177
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:438
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:252
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/callback_create.go:24
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:857
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/main.go:434
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/models/consultation.go:18
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/services/consultation.go:10
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/controllers/consultation.go:25
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:50
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:31
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/recover/recover.go:56
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1033
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1205
+/usr/local/bin/src/github.com/kataras/iris/core/router/handler.go:230
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:70
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:147
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:2694
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:1830
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:2361
+
+[WARN] 2018/08/13 22:38 Recovered from a route's Handler('github.com/MEIGUOSHU/meiguoshu_api_server/controllers.CreateProduct')
+At Request: 200 /product POST ::1
+Trace: reflect: call of reflect.Value.MethodByName on zero Value
+
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:573
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/panic.go:502
+/usr/local/Cellar/go/1.10.1/libexec/src/reflect/value.go:1177
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:438
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:252
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/callback_create.go:24
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/scope.go:857
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/jinzhu/gorm/main.go:434
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/models/product.go:19
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/services/product.go:8
+/Users/jiangzhe/Work/2018/Formal_project/src/github.com/MEIGUOSHU/meiguoshu_api_server/controllers/product.go:25
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:50
+/usr/local/bin/src/github.com/kataras/iris/middleware/logger/logger.go:31
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1319
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1328
+/usr/local/bin/src/github.com/kataras/iris/middleware/recover/recover.go:56
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1033
+/usr/local/bin/src/github.com/kataras/iris/context/context.go:1205
+/usr/local/bin/src/github.com/kataras/iris/core/router/handler.go:230
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:70
+/usr/local/bin/src/github.com/kataras/iris/core/router/router.go:147
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:2694
+/usr/local/Cellar/go/1.10.1/libexec/src/net/http/server.go:1830
+/usr/local/Cellar/go/1.10.1/libexec/src/runtime/asm_amd64.s:2361
+
+[INFO] 2018/08/13 22:39 200 269.894µs ::1 POST /product
+[INFO] 2018/08/13 22:40 200 266.607µs ::1 POST /product
+[INFO] 2018/08/13 22:41 200 273.697µs ::1 POST /product
+[INFO] 2018/08/13 22:42 200 14.947673ms ::1 POST /product
+[INFO] 2018/08/13 22:45 200 3.660196ms ::1 POST /product
+[INFO] 2018/08/13 22:49 200 3.450944ms ::1 POST /product
+[INFO] 2018/08/13 22:50 200 3.123446ms ::1 POST /product
+[INFO] 2018/08/13 22:50 200 3.842623ms ::1 POST /product
+[INFO] 2018/08/13 22:52 200 40.997611ms ::1 POST /product

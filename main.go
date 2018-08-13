@@ -12,6 +12,8 @@ import (
 	"time"
 )
 
+
+
 // Get a filename based on the date, just for the sugar.
 func todayFilename() string {
 	today := time.Now().Format("2006-01-02")

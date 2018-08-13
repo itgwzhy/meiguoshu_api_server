@@ -1,5 +1,7 @@
 package models
 
+import "github.com/jinzhu/gorm"
+
 //产品中心
 type Product struct {
 	BaseModel
@@ -10,4 +12,26 @@ type Product struct {
 	ViewNum     int64  `json:"view_num"` //浏览次数
 	Content     string `json:"content"`  //商品详情
 	Category_id int64  `json:"category_id"`
+}
+
+func (pro *Product) Create(db *gorm.DB) (*Product, error) {
+	var model *Product
+	err := db.Create(&pro).Error
+	if err == nil {
+		db.Where("id = ?", pro.ID).First(&model)
+	}
+
+	return pro, err
+}
+
+func (pro *Product) Update(db *gorm.DB) (*Product, error) {
+	var model *Product
+	err := db.Updates(&model).Error
+	db.First(&model)
+	return model, err
+}
+
+func (pro *Product) Delete(db *gorm.DB) (error) {
+	err := db.Delete(&pro).Error
+	return err
 }

@@ -27,3 +27,15 @@ func GetApplicationById(app *models.Application) (*models.Application, error) {
 	err := db.Where("id = ?", id).First(&model).Error
 	return &model, err
 }
+
+func GetAllApplication(whereQuery string, whereArgs []interface{}, page int, limit int, order string) ([]*models.Application, int, error) {
+	var (
+		err	error
+		total int
+		list []*models.Application
+	)
+	db := common.DB
+
+	err = db.Where(whereQuery, whereArgs...).Offset((page - 1) * limit).Order(order).Limit(limit).Find(&list).Count(&total).Error
+	return list, total, err
+}
